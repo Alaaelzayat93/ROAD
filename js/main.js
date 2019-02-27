@@ -2,6 +2,8 @@ $(document).ready(function () {
   
 
   $('#camera_wrap').camera();
+   navigationHover: true
+
 });
 /*carousel*/
      $(".owl-carousel").owlCarousel({

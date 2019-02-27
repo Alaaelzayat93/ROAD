@@ -23,6 +23,10 @@ html, body { max-width: 100%;}
     left:0;
     background: rgba(0,0,0,0.6);
 }
+div.menu{
+    background: #f9cc41;
+    overflow: hidden;
+}
 
 .Top{
     background: #434254;
@@ -31,7 +35,7 @@ html, body { max-width: 100%;}
     padding-left: 28%;
 }
 .camera_wrap{
-    overflow: hidden;
+    
 }
 .camera_wrap .camera_pag .camera_pag_ul{
     background: #f9cc41;
