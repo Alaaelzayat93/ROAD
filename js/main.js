@@ -2,7 +2,7 @@ $(document).ready(function () {
   
 
   $('#camera_wrap').camera();
-   navigationHover: true
+   navigationHover: true;
 
 });
 /*carousel*/
@@ -25,3 +25,11 @@ $(document).ready(function () {
         }
     }
 })
+     /*nav*/
+     function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

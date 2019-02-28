@@ -23,18 +23,14 @@
     <link rel="stylesheet" href="css/fontawesome.css"/>
 
         <!-- HTML5 Boilerplate CSS -->
-        <link rel="stylesheet" href="Css/normalize.css">
-        <!-- Customize CSS -->
-        <link rel="stylesheet" type="text/css" href="Css/style.css">
-        <link rel="stylesheet" type="text/css" href="Css/media.css"/>
-        <!--HTML5shiv Js-->
-        <script src="js/modernizr-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <!-- Customize CSS -->
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <link rel="stylesheet" type="text/css" href="Css/media.css"/>
+    <!--HTML5shiv Js-->
+    <script src="js/modernizr-3.5.0.min.js"></script>
 
-
-
-
-
-    <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/style.css"/>
     <!--end styling-->
 
      <!--If It IE9-->
@@ -42,52 +38,142 @@
 
   </head>
   <body>
- <div class="menu">
-    <ul class="Top">
-      
-      <li><a class="active" href="">home</a></li>
-      <li><a href="">about us</a></li>
-      <li><a href="">projects</a></li>
-      <li><a href="">services</a></li>
-      <li><a href="">contact</a></li>
-    </ul>
-
-<div class="slider-image">
-
-  <!---menu-->
-       
-                <!--Camera Slide-->
-                
-                <div class="camera_wrap">
-                   
-                    <div data-src="images/build1.jpg" >
-                        <img src="images/build1.jpg" class="img-responsive">
-                        <div class="camera_caption">
-                            <p>Welcome To Building Website </p>
+    <!--------loader--------->
+    <!---------sidemenu----->
+    <div id="sidebar">
+        <div class="social facebook">
+            <a href=" https://www.facebook.com " target="_blank">
+              <p> <i class="fab fa-facebook-f"></i> Like on Facebook</p>
+            </a>
+        </div>
+        <div class="social twitter">
+            <a href=" https://www.twitter.com " target="_blank">
+              <p><i class="fab fa-twitter"></i> Follow on Twitter</p>
+            </a>
+        </div>
+        <div class="social google">
+            <a href=" https://www.plus.google.com " target="_blank">
+              <p><i class="fab fa-google"></i> &nbsp; Add on Google+</p>
+            </a>
+        </div>
+        <div class="social youtube">
+            <a href=" https://www.youtube.com " target="_blank">
+              <p><i class="fab fa-youtube-square"></i> Subscribe on Youtube</p>
+            </a>
+        </div>
+        <div class="social linkedin">
+            <a href=" https://www.linkedin.com " target="_blank">
+              <p><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</p>
+            </a>
+        </div>
+    </div>
+    
+      <!---navbar--->
+      <nav id="navbar-main" class="navbar navbar-expand-lg  mt-3">
+                    <div class="container">
+                        <!-- navbar header -->
+                        <!-- our logo here -->
+                        <a class="logo navbar-brand"><h2 class=" white-color logo-h"><span class="default-font-color">b</span>uilding</h2></a>
+                        <!-- navbar button -->
+                        <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- end navbar button-->
+                        <!-- navbar collapse -->
+                        <div class="collapse navbar-collapse justify-content-lg-end " id="navbar">
+                            <ul class="navbar-nav nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">menu</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle white-color waves-effect waves-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      pages
+                                    </a>
+                                    <div class="dropdown-menu dark-bg mt-0 " aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item white-color waves-effect waves-light" href="#">events</a>
+                                        <a class="dropdown-item white-color waves-effect waves-light" href="#">specials</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item white-color waves-effect waves-light" href="#">our chefs</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">our blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">book</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link white-color waves-effect waves-light" href="#">contact</a>
+                                </li>
+                            </ul>
+                            <div class="search-form-area ">
+                                <div class="search-form-overlay"></div>
+                                <a class="search-form-trigger" href="#search-form"></a>
+                                <div id="search-form" class="search-form">
+                                    <form>
+                                        <input type="search" placeholder="Search...">
+                                    </form>
+                                </div>
+                            </div>
+                    
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a>
+                              </div>
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 
+                                </span>
+                        </div>
+                        <!-- END CONTAINER -->
+                    </div>
+                </nav>
+                  <!---slider-img--->
+                  <div class="slider-image">
+                    <div class="camera_wrap">
+                       <div data-src="images/build1.jpg" >
+                            <img src="images/build1.jpg" class="img-responsive">
+                            <div class="camera_caption">
+                                <p>Welcome To Building Website </p>
+                            </div>
+                        </div>
+                        <div data-src="images/build2.jpg">
+                            <img src="images/build2.jpg" class="img-responsive">
+                            <div class="camera_caption">
+                                <p>building slide show 2</p>
+                            </div>
+                        </div>
+                        <div data-src="images/build3.jpg">
+                            <img src="images/build3.jpg" class="img-responsive"/>
+                            <div class="camera_caption">
+                                <p>buiding slide show 3</p>
+                            </div>
+                        </div>
+                        <div data-src="images/build4.jpg" class="img-responsive">
+                            <img src="images/build4.jpg">
+                            <div class="camera_caption">
+                                <p>building slide show 4</p>
+                            </div>
+                        </div>
+                      </div>   <!--------Camera Slide End-->
+                     </div>   <!--***********  Row End-->
+                   </div>  <!--************** Container End-->
+                  </div>
+                  <div class="middle">
+                        <div class="h-content">
+                            <h2 class="text-uppercase white-color header-title"> welcome to<span class="text-capitalize default-font-color d-inline-block">building</span></h2>
+                            <h3 class="white-color text-capitalize">we make <span class="d-inline-block default-font-color">a good</span> work</h3>
+                            <div class="row justify-content-center mt-5"><a class="mb-3 text-uppercase  blank-btn b-radius mx-2 waves-effect waves-light">more detail</a> 
                         </div>
                     </div>
-                    <div data-src="images/build2.jpg">
-                        <img src="images/build2.jpg" class="img-responsive">
-                        <div class="camera_caption">
-                            <p>building slide show 2</p>
-                        </div>
-                    </div>
-                    <div data-src="images/build3.jpg">
-                        <img src="images/build3.jpg" class="img-responsive"/>
-                        <div class="camera_caption">
-                            <p>buiding slide show 3</p>
-                        </div>
-                    </div>
-                    <div data-src="images/build4.jpg" class="img-responsive">
-                        <img src="images/build4.jpg">
-                        <div class="camera_caption">
-                            <p>building slide show 4</p>
-                        </div>
-                    </div>
-                  </div>   <!--------Camera Slide End-->
-                 </div>   <!--***********  Row End-->
-               </div>  <!--************** Container End-->
-              </div>
+         
 
           <div class="clearfix"></div>
           <!---text about project-->
