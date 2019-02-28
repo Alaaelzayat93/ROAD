@@ -11,7 +11,9 @@
     -o-box-sizing:border-box;
 }
 html, body { max-width: 100%;}
-
+body{
+    font-family: "Raleway", sans-serif;
+}
 .clearfix{
     clear:both;
 }
@@ -366,19 +368,23 @@ a.search-form-trigger::before {
     top: 10%;
     left: 52%;
     transform: translate(-50%,-50%);
-    background: #434254;
-    opacity: 1.7;
+    
     width: 50%;
     text-align: center;
 
    
 } 
 .middle .h-content h2.header-title{
- animation: pulse 2.5s linear infinite;
+ 
  margin-bottom: 20px;
+ background: #000;
+    opacity: .7;
     color:#f9cc41;
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 20px;
+    font-weight: bold;
+    width: 75%;
+    height: 58px;
 }
 .middle .h-content h3{
     color: #fff;
@@ -398,21 +404,6 @@ a.search-form-trigger::before {
     
 
 
-@keyframes pulse{
-  0% {
-    transform: scale(1, 1);
-    opacity: .25;
-}
-
-50% {
-    transform: scale(1.2, 1);
-    opacity: 1;
-}
-100% {
-    transform: scale(1, 1);
-    opacity: .25;
-}
-}
 /*second section*/
 .second-section{
     background: #434254;
